@@ -1,6 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
-$mdc-theme-primary: #1565c0; // primary color example
-$mdc-theme-secondary: #388e3c; // secondary color example
+// $mdc-theme-primary: #1565c0; // primary color example
+// $mdc-theme-secondary: #388e3c; // secondary color example
+$mdc-theme-primary: #dbcece;
+$mdc-theme-secondary: darken(#2c2c2c, 1%);
+$mdc-theme-background: #000000;
+$mdc-theme-surface: darken(#efefef, 5%); // unofficial
+$mdc-theme-error: #c70011; // unofficial
+$mdc-theme-on-primary: #efefef; // unofficial
+$mdc-theme-on-secondary: darken(#2c2c2c, 1%); // unofficial
+$mdc-theme-on-surface: #2c2c2c; // unofficial
+$mdc-theme-on-error: #c70011; // unofficial
 
 @import "~@angular-mdc/theme/material";
 // @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@font-face { font-family: Typoround; src: url('./fonts/typo-round.regular-demo.otf'); } 
+@font-face { font-family: Typoround; font-weight: bold; src: url('./fonts/typo-round.bold-demo.otf');}
+
+$mdc-typography-font-family: 'Typoround' !important;
+
+$mdc-typography-styles-headline1: (
+  color: $mdc-theme-primary
+);
+$mdc-typography-styles-headline2: (
+  color: $mdc-theme-primary
+);
+$mdc-typography-styles-headline3: (
+  color: $mdc-theme-primary
+);
+$mdc-typography-styles-headline4: (
+  color: $mdc-theme-primary
+);
+$mdc-typography-styles-headline5: (
+  color: $mdc-theme-primary
+);
+$mdc-typography-styles-headline6: (
+  color: $mdc-theme-primary
+);
+$mdc-typography-styles-caption: (
+  font-weight: bold,
+  color: darken($mdc-theme-primary, 20%)
+);
+$mdc-typography-styles-button: (
+  font-weight: bold,
+  text-transform: uppercase
+);
+$mdc-typography-styles-overline: (
+  color: darken($mdc-theme-primary, 30%)
+);
+body {
+    background-color: $mdc-theme-background;
+    font-family: 'Typoround';
+    color: $mdc-theme-primary;
+  }
+
+
+.mdc-text-field {
+    @include mdc-text-field-outline-shape-radius(50%);
+}
