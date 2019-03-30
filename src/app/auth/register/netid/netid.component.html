@@ -1,12 +1,16 @@
 <div style="min-height: 90vh" fxLayout="column" fxLayoutAlign="space-around center">
     <div fxLayout="column" fxLayoutAlign="center center"> 
       <div mdcHeadline2>Hi Clara!</div>
-      <div mdcHeadline4>To finish registering please enter your netid and password</div>
-      <mdc-text-field class="circle-input " outlined="false" dense="isDense" label="NetId">
+        <br>
+      <div mdcHeadline4>To finish registering please enter your netID and password</div>
+        <br>
+      <mdc-text-field class="circle-input " outlined dense="isDense" label="NetID">
       </mdc-text-field>
-      <mdc-text-field class="circle-input " outlined="false" dense="isDense" label="Password">
+        <br>
+      <mdc-text-field class="circle-input " outlined dense="isDense" label="Password" type="password">
       </mdc-text-field>
-      <button mdc-button (click)="onNext()">Next</button>
+        <br>
+      <button mdc-button class = "next-button" outlined (click)="onNext()">Next</button>
     </div>
   </div>
   

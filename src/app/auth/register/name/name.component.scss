@@ -1,3 +1,9 @@
-.circle-input {
-    border-radius: 15px;
+.circle-input{
+    mdc-text-field-outline-shape-radius: 50%;
   }
+
+.next-button{
+    border-radius: 30px;
+    color: #0cef71;
+    border-color: #0cef71;
+}

@@ -4,3 +4,7 @@ $mdc-theme-secondary: #388e3c; // secondary color example
 
 @import "~@angular-mdc/theme/material";
 // @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.mdc-text-field {
+    @include mdc-text-field-outline-shape-radius(50%);
+}
