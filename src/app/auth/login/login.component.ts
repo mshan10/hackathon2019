@@ -15,7 +15,6 @@ export class LoginComponent implements OnInit {
   }
 
   onNext() {
-    console.log("loggged in")
-    // this.router.navigate(['/auth/']);
+    this.router.navigate(['/main']);
   }
 }

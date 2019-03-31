@@ -22,9 +22,9 @@ export class MainComponent implements OnInit {
   }
 
   onAnnounce() {
-
+    this.router.navigate(['/announce']);
   }
-  
+
   onMcwell() {
     this.date = true;
     this.blank = false;

@@ -1,9 +1,12 @@
 <div style="min-height: 90vh" fxLayout="column" fxLayoutAlign="space-around center">
   <div fxLayout="column" fxLayoutAlign="center center"> 
-    <img src="assets/panda.jpg">
-    <div mdcHeadline4>What would you like to be called?</div>
-    <mdc-text-field class="circle-input " outlined="false" dense="isDense">
+      <img src="../../../../assets/images/logoCOL.png" class = "sprout-logo" width="200" height="200">
+      <br>
+    <div class="name" mdcHeadline4>What would you like to be called?</div>
+    <br>
+    <mdc-text-field outlined class="circle-input" >
     </mdc-text-field>
-    <button mdc-button (click)="onNext()">Next</button>
+    <br>
+    <button mdc-button outlined class = "next-button"(click)="onNext()">Next</button>
   </div>
 </div>

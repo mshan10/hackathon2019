@@ -16,6 +16,7 @@ $mdc-theme-on-error: #c70011; // unofficial
 
 @font-face { font-family: Typoround; src: url('./fonts/typo-round.regular-demo.otf'); } 
 @font-face { font-family: Typoround; font-weight: bold; src: url('./fonts/typo-round.bold-demo.otf');}
+@font-face { font-family: AvenirNext; src: url('./fonts/AvenirNext-Regular.otf'); }
 
 $mdc-typography-font-family: 'Typoround' !important;
 
@@ -54,10 +55,14 @@ body {
     color: $mdc-theme-primary;
     margin: 0px;
   }
-
-
 .mdc-text-field {
     @include mdc-text-field-outline-shape-radius(50%);
+    @include mdc-text-field-outline-color(#FFF);
+    @include mdc-text-field-hover-outline-color(#FFF);
+    @include mdc-text-field-helper-text-color(#FFF);
+    @include mdc-text-field-ink-color(#FFF);
+    @include mdc-text-field-label-color(#FFF);	
+    @include mdc-text-field-caret-color(#FFF);	
 }
 .mdc-list {
     @include mdc-list-item-primary-text-ink-color(white);
@@ -71,3 +76,5 @@ body {
     @include mdc-top-app-bar-fill-color(black);
     @include mdc-top-app-bar-icon-ink-color(white)
 }
+   
+
