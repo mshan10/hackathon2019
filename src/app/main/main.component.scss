@@ -56,11 +56,13 @@ h3 {
 }
 
 .headline {
-    background-image: url("../../assets/gradientsprout.png");
-    color: white;
-    font-family: Typoround;
+    background-image: url("../../assets/oliver.png");
+    width: 400px;
+    height: 70px;
     padding: 5px 20px;
     border-radius: 30px;
+    background-position: center;
+    background-size: cover;
 }
 
 .date {
@@ -73,6 +75,7 @@ h3 {
 }
 .choice-button {
     font-family: Typoround;
+    color: #0cef71;
 }
 
 .mdc-menu {
@@ -94,3 +97,10 @@ h3 {
     background-position: center;
 }
 
+.relax {
+    height: 300px;
+    width: 290px;
+    background-image: url("../../assets/relaxSP.png");
+    background-position: center;
+    background-size: cover;
+}

@@ -23,7 +23,7 @@
 </mdc-top-app-bar>
 <div fxLayout="row" fxLayoutAlign="space-around start" style="margin-top: 80px; margin-bottom: 60px;">
   <div fxFlex="60vw" fxLayout="column" fxLayoutAlign="space-around center" class="calendar-box">
-    <div mdcHeadline2 class="headline">oliver's calendar</div>
+    <div class="headline"></div>
     <div mdcHeadline6 *ngIf="month" class="date">3/1 - 3/31</div>
     <div mdcHeadline6 *ngIf="week" class="date">3/25 - 3/31</div>
     <div fxLayout="row" fxLayoutAlign="space-around start">
@@ -41,47 +41,30 @@
     </div>
     <br>
     <br>
-    <div mdcHeadline4 class="date">mcwell</div>
-    <mdc-card class="card">
-        <mdc-card-primary-action>
-          <mdc-card-media wide class="mcwell-media"></mdc-card-media>
-          <div class="demo-card__primary">
-            <h2 class="demo-card__title" mdcSubtitle1>McWell Tips for Success</h2>
-            <h3 class="demo-card__subtitle" mdcBody2>Remember to take a breather and relax</h3>
-          </div>
-        </mdc-card-primary-action>
-        <mdc-card-actions>
-          <mdc-card-action-buttons>
-            <button mdc-button outlined mdcCardAction="button" class="card-btn" style="padding-left: 10px;">Read</button>
-            <button mdc-button outlined mdcCardAction="button" class="card-btn" (click)="onMcwell()">Add</button>
-          </mdc-card-action-buttons>
-          <mdc-card-action-icons>
-            <button mdcIconButton mdcCardAction="icon" icon="more_vert" class="card-btn"></button>
-          </mdc-card-action-icons>
-        </mdc-card-actions>
-      </mdc-card>
-      <br>
-      <br>
-      <div mdcHeadline4 class="date">subscriptions</div>
-      <mdc-list-group style="min-width: 290px">
-        <mdc-list dense>
-          <mdc-list-item selected>
-            <mdc-checkbox checked></mdc-checkbox>
-            korean student association
-          </mdc-list-item>
-          <mdc-list-item selected>
-            <mdc-checkbox checked></mdc-checkbox>
-            dillon hall
-          </mdc-list-item>
-          <mdc-list-item selected (click)="onCheck()"> 
-            <mdc-checkbox checked></mdc-checkbox>
-            campus dining
-          </mdc-list-item>
-        </mdc-list>
-      </mdc-list-group> 
-      <br>
-      <br>
-      <button mdc-button (click)="onAnnounce()" class="announce-btn" outlined>generate weekly announcements</button>
+    <div mdcHeadline4 class="date">from mcwell</div>
+    <div class="relax"></div>
+    <br>
+    <br>
+    <div mdcHeadline4 class="date">subscriptions</div>
+    <mdc-list-group style="min-width: 290px">
+      <mdc-list dense>
+        <mdc-list-item selected>
+          <mdc-checkbox checked></mdc-checkbox>
+          korean student association
+        </mdc-list-item>
+        <mdc-list-item selected>
+          <mdc-checkbox checked></mdc-checkbox>
+          dillon hall
+        </mdc-list-item>
+        <mdc-list-item selected (click)="onCheck()"> 
+          <mdc-checkbox checked></mdc-checkbox>
+          campus dining
+        </mdc-list-item>
+      </mdc-list>
+    </mdc-list-group> 
+    <br>
+    <br>
+    <button mdc-button (click)="onAnnounce()" class="announce-btn" outlined>generate weekly announcements</button>
   </div>
 </div>
 <div fxLayout="row" fxLayoutAlign="space-around start" style="padding-bottom: 25px">
