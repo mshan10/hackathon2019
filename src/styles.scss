@@ -97,3 +97,7 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+.search-btn {
+    @include mdc-icon-button-ink-color(white);
+}

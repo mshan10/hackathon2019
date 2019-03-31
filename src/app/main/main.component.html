@@ -5,7 +5,10 @@
         <img style="width: 150px; padding-top: 18px" src="../../assets/sproutwhite.png">
       </div>
     </mdc-top-app-bar-section>
-    <mdc-top-app-bar-section align="end">
+    <mdc-top-app-bar-section align="end" fxLayout="row" fxLayoutAlign="end center">
+      <mdc-text-field outlined class="explore" fxLayout="row" fxLayoutAlign="end center" name="explore">
+        <button mdc-icon-button icon="search" trailing class="search-btn"></button>
+      </mdc-text-field>
       <mdc-icon mdcTopAppBarActionItem (click)="profileMenu.open = !profileMenu.open">settings</mdc-icon>
       <div mdcMenuSurfaceAnchor #menuAnchor>
         <mdc-menu #profileMenu [anchorElement]="menuAnchor" style="margin-top: 20px">
