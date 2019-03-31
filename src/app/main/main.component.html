@@ -1,10 +1,36 @@
-<div fxLayout="row" fxLayoutAlign="space-around start" style="margin: 40px">
-  <div fxFlex="60vw" fxLayout="column" fxLayoutAlign="space-around start">
-    <div mdcHeadline2>Clara's Week</div>
-    <div mdcHeadline4>4/1 - 4/7</div>
-    <app-calendar></app-calendar>
+<mdc-top-app-bar [scrollTarget]="standardContent">
+  <mdc-top-app-bar-row>
+    <mdc-top-app-bar-section align="start" title="Sprout">
+      <div fxLayout="column" fxLayoutAlign="space-around">
+        <img style="width: 150px; padding-top: 18px" src="../../assets/sproutwhite.png">
+      </div>
+    </mdc-top-app-bar-section>
+    <mdc-top-app-bar-section align="end">
+      <mdc-icon mdcTopAppBarActionItem>settings</mdc-icon>
+    </mdc-top-app-bar-section>
+  </mdc-top-app-bar-row>
+</mdc-top-app-bar>
+<div fxLayout="row" fxLayoutAlign="space-around start" style="margin-top: 80px; margin-bottom: 60px;">
+  <div fxFlex="60vw" fxLayout="column" fxLayoutAlign="space-around center" class="calendar-box">
+    <div mdcHeadline2 class="headline">Oliver's Calendar</div>
+    <div mdcHeadline6 *ngIf="month" class="date">3/1 - 3/31</div>
+    <div mdcHeadline6 *ngIf="week" class="date">3/25 - 3/31</div>
+    <div fxLayout="row" fxLayoutAlign="space-around start">
+      <div class="calendar c0" *ngIf="blank" style="background-image: url(../../assets/blankcalendar.png)"></div>
+      <div class="calendar c1" *ngIf="date" style="background-image: url(../../assets/calendar28.png)"></div>
+      <div class="week-calendar c2" *ngIf="cal1" style="background-image: url(../../assets/calendarONE.png)"></div>
+      <div class="week-calendar c3" *ngIf="cal2" style="background-image: url(../../assets/calendarTWO.png)"></div>
+    </div>  
   </div>
-  <div fxFlex="40vw" fxLayout="column" fxLayoutAlign="space-around start">
+  <div fxFlex="30vw" fxLayout="column" fxLayoutAlign="space-around start">
+    <div fxLayoutffxLayout="row" fxLayoutAlign="space-between center" class="choice">
+      <button mdc-button class="choice-button">Month</button>
+      <button mdc-button (click)="onWeek()" class="choice-button">Week</button>
+      <button mdc-button class="choice-button">Day</button>
+    </div>
+    <br>
+    <br>
+    <div mdcHeadline4 class="date">McWell</div>
     <mdc-card class="card">
         <mdc-card-primary-action>
           <mdc-card-media wide class="mcwell-media"></mdc-card-media>
@@ -12,24 +38,40 @@
             <h2 class="demo-card__title" mdcSubtitle1>McWell Tix @ DPAC</h2>
             <h3 class="demo-card__subtitle" mdcBody2>McDonald Center for Student Well-Being</h3>
           </div>
-          <!-- <div class="demo-card__secondary" mdcBody2>
-              Head to the Browning Cinema at the DeBartolo Performing Arts Center for a movie this weekend! 
-          </div> -->
         </mdc-card-primary-action>
         <mdc-card-actions>
           <mdc-card-action-buttons>
             <button mdc-button mdcCardAction="button">Read</button>
-            <button mdc-button mdcCardAction="button" (click)="onMcwell($event)">Add</button>
+            <button mdc-button mdcCardAction="button" (click)="onMcwell()">Add</button>
           </mdc-card-action-buttons>
           <mdc-card-action-icons>
             <button mdcIconButton mdcCardAction="icon" icon="more_vert"></button>
           </mdc-card-action-icons>
         </mdc-card-actions>
       </mdc-card>
+      <br>
+      <br>
+      <div mdcHeadline4 class="date">Subscriptions</div>
+      <mdc-list-group style="min-width: 290px">
+        <mdc-list dense>
+          <mdc-list-item selected>
+            <mdc-checkbox checked></mdc-checkbox>
+            Korean Student Association
+          </mdc-list-item>
+          <mdc-list-item selected>
+            <mdc-checkbox checked></mdc-checkbox>
+            Dillon Hall
+          </mdc-list-item>
+          <mdc-list-item selected (click)="onCheck()"> 
+            <mdc-checkbox checked></mdc-checkbox>
+            Campus Dining
+          </mdc-list-item>
+        </mdc-list>
+      </mdc-list-group> 
+      <br>
+      <br>
+      <button mdc-button (click)="onAnnounce()">Generate Weekly Announcements</button>
   </div>
 </div>
 
-<p>
-  main works!
-  <app-calendar></app-calendar>
-</p>
+

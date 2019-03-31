@@ -1,12 +1,14 @@
 .card {
     max-width: 350px;
-    margin: 10px;
+    // margin: 10px;
     // padding: 0 10px;
-    background-color: green;
+    background-image:url("../../assets/gradientsprout.png");
+    color: white;
+    font-family: Typoround;
 }
 
 .mcwell-media {
-    background-image: url("../../assets/mcwell.png");
+    background-image: url("../../assets/panda.jpg");
     height: 100px;
 }
 
@@ -15,10 +17,60 @@
     margin: 0;
 }
 h2 {
-    // color: black;
+    font-family: Typoround;
     margin: 0;
+    color: white;
 }
 h3 {
-    // color: black;
+    font-family: Typoround;
     margin: 0;
+    color: white;
+}
+.calendar {
+    width: 450px;
+    height: 500px;
+    background-size: cover;
+}
+.week-calendar {
+    width: 650px;
+    height: 520px;
+    background-size: cover;
+}
+
+.calendar-box {
+    // padding: 0 30px;
+}
+.c0 {
+    z-index: 0;
+}
+
+.c1 {
+    z-index: 1;
+}
+.c0 {
+    z-index: 2;
+}
+
+.c1 {
+    z-index: 3;
+}
+
+.headline {
+    background-image: url("../../assets/gradientsprout.png");
+    color: white;
+    font-family: Typoround;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+.date {
+    font-family: Typoround;
+    // color: white;
+}
+
+.choice {
+    min-width: 300px;
+}
+.choice-button {
+    font-family: Typoround;
 }

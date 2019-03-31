@@ -3,7 +3,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule, Routes } from '@angular/router';
-import { MdcTextFieldModule, MdcTypographyModule, MdcButtonModule, MdcCardModule, MdcIconButtonModule } from '@angular-mdc/web';
+import { 
+  MdcTextFieldModule, 
+  MdcTypographyModule, 
+  MdcButtonModule, 
+  MdcCardModule, 
+  MdcIconButtonModule, 
+  MdcRippleModule, 
+  MdcListModule,
+  MdcCheckboxModule,
+  MdcTopAppBarModule  
+} from '@angular-mdc/web';
 
 
 // import components
@@ -24,6 +34,10 @@ export const ROUTES: Routes = [
     MdcButtonModule,
     MdcCardModule,
     MdcIconButtonModule,
+    MdcRippleModule,
+    MdcListModule,
+    MdcCheckboxModule,
+    MdcTopAppBarModule,
     RouterModule.forChild(ROUTES)
   ]
 })
