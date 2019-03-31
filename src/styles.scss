@@ -52,9 +52,22 @@ body {
     background-color: $mdc-theme-background;
     font-family: 'Typoround';
     color: $mdc-theme-primary;
+    margin: 0px;
   }
 
 
 .mdc-text-field {
     @include mdc-text-field-outline-shape-radius(50%);
+}
+.mdc-list {
+    @include mdc-list-item-primary-text-ink-color(white);
+    @include mdc-list-item-graphic-fill-color(white);
+    @include mdc-list-group-subheader-ink-color(white);
+    font-family: 'Typoround';
+}
+
+.mdc-top-app-bar {
+    // @include mdc-top-app-bar-ink-color(green);
+    @include mdc-top-app-bar-fill-color(black);
+    @include mdc-top-app-bar-icon-ink-color(white)
 }
