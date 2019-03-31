@@ -19,3 +19,43 @@
 	font-family: AvenirNext;
 	max-width: 800px;
 }
+
+.add{
+    min-width: 10px;
+    min-height:10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sub{
+	width: 200px;
+	height: 200px;
+    background-image: url("/../../assets/images/SUGsub.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.csforgood{
+	width: 200px;
+	height: 200px;
+    background-image: url("/../../assets/images/SUGcsgood.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.tennis{
+	width: 200px;
+	height: 200px;
+    background-image: url("/../../assets/images/SUGtennis.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.psych{
+	width: 200px;
+	height: 200px;
+    background-image: url("/../../assets/images/SUBpsychology.png");
+    background-size: cover;
+    background-position: center;
+}

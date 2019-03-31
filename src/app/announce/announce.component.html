@@ -1,8 +1,8 @@
 <div style="min-height: 50vh" fxLayout="column" fxLayoutAlign="space-around center">
     <div fxLayout="column" fxLayoutAlign="center center"> 
-    	<div mdcHeadline2 class="title">oliver's weekly announcements</div>
-    	<br>
+    	<img src="../../assets/images/oliverweekly.png" width=900>
 	    <div fxLayout="column" fxLayoutAlign="center start" class="divisions">
+	    	<br>
 		    <div mdcHeadline4 class="names">KOREAN STUDENT ASSOCIATION:</div>
 		    	<div mdcHeadline5 class="eventname">Seoul'd Out 2019</div>
 		    	<div class = "p1">
@@ -56,11 +56,41 @@
 		    		</p>
 		    	</div>
 		    <br>
-		</div>
+			</div>
+    </div>
+    </div>
+	<div fxLayout="column" fxLayoutAlign="center start" class="divisions">
+    	<img src="../../assets/images/suggestSP.png" width=400>
+    	<div fxLayout="row" fxLayoutAlign="space-between center" class="suggestions">
+			<button class = "sub" mdc-button>
+                <button mdcIconButton [on]="false" class="add">
+                    <mdc-icon>star_border</mdc-icon>
+                    <mdc-icon mdcIconOn>star</mdc-icon>
+                </button>
+            </button>
+			<button class = "csforgood" mdc-button (click)="(onNext)">
+                <button mdcIconButton [on]="false" class="add">
+                    <mdc-icon>star_border</mdc-icon>
+                    <mdc-icon mdcIconOn>star</mdc-icon>
+                </button>
+            </button>
+			<button class = "tennis" mdc-button (click)="(onNext)">
+                <button mdcIconButton [on]="false" class="add">
+                    <mdc-icon>star_border</mdc-icon>
+                    <mdc-icon mdcIconOn>star</mdc-icon>
+                </button>
+            </button>
+			<button class = "psych" mdc-button>
+                <button mdcIconButton [on]="false" class="add">
+                    <mdc-icon>star_border</mdc-icon>
+                    <mdc-icon mdcIconOn>star</mdc-icon>
+                </button>
+            </button>
+    	</div>
     </div>
     <br>
     <br>
-</div>
+    <br>
 <div fxLayout="row" fxLayoutAlign="space-around start" style="padding-bottom: 25px">
   <div class="logo"></div>
 </div>
