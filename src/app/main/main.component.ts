@@ -7,10 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  mcwell = false;
   // panda = true;
-  blank = true;
-  date = false;
+  // blank = true;
+  date = true;
   cal1 = false;
   cal2 = false;
 
@@ -25,11 +24,6 @@ export class MainComponent implements OnInit {
     this.router.navigate(['/announce']);
   }
 
-  onMcwell() {
-    this.date = true;
-    this.blank = false;
-  }
- 
   onWeek() {
     this.week = true;
     this.month = false;
