@@ -63,6 +63,4 @@ body {
     @include mdc-text-field-label-color(#FFF);	
     @include mdc-text-field-caret-color(#FFF);	
 }
-.mdc-button {
-    @include mdc-button
-}
+

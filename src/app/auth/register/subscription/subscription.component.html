@@ -12,28 +12,74 @@
     		<div mdcHeadline4 class = "popular">Popular:</div>
     		<br>
     		<div fxLayout="row" fxLayoutAlign="space-between center" class="row1">
-    			<button class = "KSA" mdc-button (click)="(onNext)"></button>
-				<button class = "SIBC" mdc-button (click)="(onNext)"></button>
-				<button class = "CSE" mdc-button (click)="(onNext)"></button>
+    			<button class = "KSA" mdc-button (click)="(onNext)">
+                    <button mdcIconButton [on]="false" class="add">
+                        <mdc-icon>star_border</mdc-icon>
+                        <mdc-icon mdcIconOn>star</mdc-icon>
+                    </button>
+                </button>
+				<button class = "SIBC" mdc-button (click)="(onNext)">
+                    <button mdcIconButton [on]="false" class="add">
+                        <mdc-icon>star_border</mdc-icon>
+                        <mdc-icon mdcIconOn>star</mdc-icon>
+                    </button>
+                </button>
+				<button class = "CSE" mdc-button (click)="(onNext)">
+                    <button mdcIconButton [on]="false" class="add">
+                        <mdc-icon>star_border</mdc-icon>
+                        <mdc-icon mdcIconOn>star</mdc-icon>
+                    </button>
+                </button>
     		</div>
     		<br>
     		<br>
     		<div fxLayout="row" fxLayoutAlign="space-between center" class="row2">
-    			<button class = "mendoza" mdc-button (click)="(onNext)"></button>
-				<button class = "dillon" mdc-button (click)="(onNext)"></button>
-				<button class = "football" mdc-button (click)="(onNext)"></button>
+    			<button class = "mendoza" mdc-button (click)="(onNext)">
+                    <button mdcIconButton [on]="false" class="add">
+                        <mdc-icon>star_border</mdc-icon>
+                        <mdc-icon mdcIconOn>star</mdc-icon>
+                    </button>
+                </button>
+				<button class = "dillon" mdc-button (click)="(onNext)">
+                    <button mdcIconButton [on]="false" class="add">
+                        <mdc-icon>star_border</mdc-icon>
+                        <mdc-icon mdcIconOn>star</mdc-icon>
+                    </button>
+                </button>
+				<button class = "football" mdc-button (click)="(onNext)">
+                    <button mdcIconButton [on]="false" class="add">
+                        <mdc-icon>star_border</mdc-icon>
+                        <mdc-icon mdcIconOn>star</mdc-icon>
+                    </button>
+                </button>
     		</div>
     		<br>
     		<br>
     		<div fxLayout="row" fxLayoutAlign="space-between center" class="row3">
-    			<button class = "lewis" mdc-button (click)="(onNext)"></button>
-				<button class = "campusdining" mdc-button (click)="(onNext)"></button>
-				<button class = "stugov" mdc-button (click)="(onNext)"></button>
+    			<button class = "lewis" mdc-button (click)="(onNext)">
+                    <button mdcIconButton [on]="false" class="add">
+                         <mdc-icon>star_border</mdc-icon>
+                        <mdc-icon mdcIconOn>star</mdc-icon>
+                    </button>
+                </button>
+				<button class = "campusdining" mdc-button (click)="(onNext)">
+                    <button mdcIconButton [on]="false" class="add">
+                        <mdc-icon>star_border</mdc-icon>
+                        <mdc-icon mdcIconOn>star</mdc-icon>
+                    </button>
+                </button>
+				<button class = "stugov" mdc-button (click)="(onNext)">
+                    <button mdcIconButton [on]="false" class="add">
+                        <mdc-icon>star_border</mdc-icon>
+                        <mdc-icon mdcIconOn>star</mdc-icon>
+                    </button>
+                </button>
     		</div>
     		<br>
     		<br>
     	</div>
     	<div mdcHeadline5 class="message"> Click explore to add more subscriptions or finish </div>
+        <br>
     	<div fxLayout="row" fxLayoutAlign="space-between center" class="row4">
 			<button class = "explore" mdc-button outlined> Explore </button>
 			<button class = "finish" mdc-button outlined (click)="onNext()"> Finish </button>

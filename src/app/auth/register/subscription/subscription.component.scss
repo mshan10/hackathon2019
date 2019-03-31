@@ -15,6 +15,13 @@
 .row1{
 	min-width:800px;
 }
+.add{
+    min-width: 10px;
+    min-height:10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
 .KSA{
 	width: 250px;
 	height: 150px;
@@ -22,6 +29,7 @@
     background-size: cover;
     background-position: center;
 }
+
 .SIBC{
 	width: 250px;
 	height: 150px;
@@ -33,6 +41,54 @@
 	width: 250px;
 	height: 150px;
     background-image: url("../../../../assets/images/CSEbutton.png");
+    background-size: cover;
+    background-position: center;
+}
+.row2{
+    min-width:800px;
+}
+.mendoza{
+    width: 250px;
+    height: 150px;
+    background-image: url("../../../../assets/images/mendozabutton.png");
+    background-size: cover;
+    background-position: center;
+}
+.dillon{
+    width: 250px;
+    height: 150px;
+    background-image: url("../../../../assets/images/Dillonbutton.png");
+    background-size: cover;
+    background-position: center;
+}
+.football{
+    width: 250px;
+    height: 150px;
+    background-image: url("../../../../assets/images/footballbutton.png");
+    background-size: cover;
+    background-position: center;
+}
+.row3{
+    min-width:800px;
+}
+.lewis{
+    width: 250px;
+    height: 150px;
+    background-image: url("../../../../assets/images/lewisbutton.png");
+    background-size: cover;
+    background-position: center;
+}
+.campusdining{
+    width: 250px;
+    height: 150px;
+    background-image: url("../../../../assets/images/camdiningbutton.png");
+    background-size: cover;
+    background-position: center;
+}
+.stugov{
+    width: 250px;
+    height: 150px;
+    background-image: url("../../../../assets/images/StuGovButton.png");
     background-size: cover;
     background-position: center;
 }
