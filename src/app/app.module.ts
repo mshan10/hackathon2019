@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthModule } from 'src/app/auth/auth.module';
 import { MainModule } from 'src/app/main/main.module';
+import { AnnounceModule } from 'src/app/announce/announce.module';
 
 
 import { AppComponent } from './app.component';
@@ -17,7 +18,8 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     AuthModule,
-    MainModule    
+    MainModule,
+    AnnounceModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
