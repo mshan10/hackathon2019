@@ -22,8 +22,13 @@ h3 {
     color: white;
 }
 .calendar {
-    width: 450px;
-    height: 500px;
+    width: 650px;
+    height: 635px;
+    background-size: cover;
+}
+.notes {
+    width: 650px;
+    height: 200px;
     background-size: cover;
 }
 .week-calendar {
@@ -116,4 +121,30 @@ h3 {
     height: 40px;
     width: 200px;
     font-family: AvenirNext;
+}
+.sched {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #fff568;
+}
+.ksa {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #7568ff;
+}
+
+.dh {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #d08625;
+}
+
+.cd {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ff68e1;
 }

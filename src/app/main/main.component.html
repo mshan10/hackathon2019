@@ -31,14 +31,18 @@
     <div mdcHeadline6 *ngIf="week" class="date">3/25 - 3/31</div>
     <div fxLayout="row" fxLayoutAlign="space-around start">
       <!-- <div class="calendar c0" *ngIf="blank" style="background-image: url(../../assets/marchblank.png)"></div> -->
-      <div class="calendar c1" *ngIf="date" style="background-image: url(../../assets/march28.png)"></div>
-      <div class="week-calendar c2" *ngIf="cal1" style="background-image: url(../../assets/calendarONE.png)"></div>
-      <div class="week-calendar c3" *ngIf="cal2" style="background-image: url(../../assets/calendarTWO.png)"></div>
+      <div class="calendar c1" *ngIf="date" style="background-image: url(../../assets/marchNEW.png)"></div>
+      <div fxLayout="column" fxLayoutAlign="space-between center">
+        <div class="week-calendar c2" *ngIf="cal1" style="background-image: url(../../assets/calendarONE.png)"></div>
+        <div class="week-calendar c3" *ngIf="cal2" style="background-image: url(../../assets/calendarTWO.png)"></div>
+        <br>  
+        <div class="notes" *ngIf="week" style="background-image: url(../../assets/notesSP.png)"></div>
+      </div>
     </div>  
   </div>
   <div fxFlex="30vw" fxLayout="column" fxLayoutAlign="space-around start">
     <div fxLayoutffxLayout="row" fxLayoutAlign="space-between center" class="choice">
-      <button mdc-button class="choice-button">month</button>
+      <button mdc-button (click)="onMonth()" class="choice-button">month</button>
       <button mdc-button (click)="onWeek()" class="choice-button">week</button>
       <button mdc-button class="choice-button">day</button>
     </div>
@@ -54,15 +58,23 @@
       <mdc-list dense>
         <mdc-list-item selected>
           <mdc-checkbox checked></mdc-checkbox>
-          korean student association
+          <div style="width: 200px">class schedule</div>
+          <div class="sched"></div>
         </mdc-list-item>
         <mdc-list-item selected>
           <mdc-checkbox checked></mdc-checkbox>
-          dillon hall
+          <div style="width: 200px">korean student association</div>
+          <div class="ksa"></div>
         </mdc-list-item>
-        <mdc-list-item selected (click)="onCheck()"> 
+        <mdc-list-item selected>
           <mdc-checkbox checked></mdc-checkbox>
-          campus dining
+          <div style="width: 200px">dillon hall</div>
+          <div class="dh"></div>
+        </mdc-list-item>
+        <mdc-list-item selected> 
+          <mdc-checkbox checked (change)="onCheck()"></mdc-checkbox>
+          <div style="width: 200px">campus dining</div>
+          <div class="cd"></div>
         </mdc-list-item>
       </mdc-list>
     </mdc-list-group> 
