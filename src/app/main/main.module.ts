@@ -12,7 +12,8 @@ import {
   MdcRippleModule, 
   MdcListModule,
   MdcCheckboxModule,
-  MdcTopAppBarModule  
+  MdcTopAppBarModule,
+  MdcMenuModule  
 } from '@angular-mdc/web';
 
 
@@ -38,6 +39,7 @@ export const ROUTES: Routes = [
     MdcListModule,
     MdcCheckboxModule,
     MdcTopAppBarModule,
+    MdcMenuModule,
     RouterModule.forChild(ROUTES)
   ]
 })

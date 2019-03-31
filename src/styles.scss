@@ -77,4 +77,23 @@ body {
     @include mdc-top-app-bar-icon-ink-color(white)
 }
    
+.announce-btn {
+    @include mdc-button-shape-radius(50%);
+    @include mdc-button-outline-color(#0cef71);
+}
 
+.card-btn {
+    // @include mdc-button-shape-radius(50%);
+    @include mdc-button-outline-color(white);
+    @include mdc-button-ink-color(white);
+    font-family: AvenirNext;
+    text-transform: lowercase;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    background-image: url("./assets/images/logoCOL.png");
+    background-size: cover;
+    background-position: center;
+}

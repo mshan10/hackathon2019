@@ -4,7 +4,7 @@
     // padding: 0 10px;
     background-image:url("../../assets/gradientsprout.png");
     color: white;
-    font-family: Typoround;
+    font-family: AvenirNext;
 }
 
 .mcwell-media {
@@ -74,3 +74,23 @@ h3 {
 .choice-button {
     font-family: Typoround;
 }
+
+.mdc-menu {
+    min-width: 200px;
+}
+
+.settings {
+    color: black;
+}
+
+.announce-btn {
+    font-size: 20px;
+    height: 55px;
+    width: 290px;
+    text-transform: lowercase;
+    font-family: Typoround;
+    // outline: 5px solid green;
+    // background-image: url("../../assets/gradientsprout.png");
+    background-position: center;
+}
+
