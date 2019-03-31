@@ -1,22 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
   error: string;
 
-  constructor( 
-    private router: Router
-  ) {}
+  constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
-  onLogin() {
-    console.log("logged in")
+  onNext() {
+    console.log("loggged in")
+    // this.router.navigate(['/auth/']);
   }
 }

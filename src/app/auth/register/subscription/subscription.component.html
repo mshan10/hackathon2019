@@ -1,0 +1,42 @@
+<div style="min-height: 50vh" fxLayout="column" fxLayoutAlign="space-around center">
+    <div fxLayout="column" fxLayoutAlign="center center"> 
+    	<div mdcHeadline2 class="title">Choose Your Subscriptions</div>
+    	<br>
+    	<!-- <mdc-text-field class="searchbar" outlined dense="isDense" label="Search" >
+    		<button mdc-icon-button trailing icon="search"></button>
+    	</mdc-text-field>
+    	<br>  -->
+    	<br> 
+    	<br> 
+    	<div fxLayout="column" fxLayoutAlign="center start" class="divisions">
+    		<div mdcHeadline4 class = "popular">Popular:</div>
+    		<br>
+    		<div fxLayout="row" fxLayoutAlign="space-between center" class="row1">
+    			<button class = "KSA" mdc-button (click)="(onNext)"></button>
+				<button class = "SIBC" mdc-button (click)="(onNext)"></button>
+				<button class = "CSE" mdc-button (click)="(onNext)"></button>
+    		</div>
+    		<br>
+    		<br>
+    		<div fxLayout="row" fxLayoutAlign="space-between center" class="row2">
+    			<button class = "mendoza" mdc-button (click)="(onNext)"></button>
+				<button class = "dillon" mdc-button (click)="(onNext)"></button>
+				<button class = "football" mdc-button (click)="(onNext)"></button>
+    		</div>
+    		<br>
+    		<br>
+    		<div fxLayout="row" fxLayoutAlign="space-between center" class="row3">
+    			<button class = "lewis" mdc-button (click)="(onNext)"></button>
+				<button class = "campusdining" mdc-button (click)="(onNext)"></button>
+				<button class = "stugov" mdc-button (click)="(onNext)"></button>
+    		</div>
+    		<br>
+    		<br>
+    	</div>
+    	<div mdcHeadline5 class="message"> Click explore to add more subscriptions or finish </div>
+    	<div fxLayout="row" fxLayoutAlign="space-between center" class="row4">
+			<button class = "explore" mdc-button outlined> Explore </button>
+			<button class = "finish" mdc-button outlined (click)="onNext()"> Finish </button>
+		</div>
+    </div>
+</div>

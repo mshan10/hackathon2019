@@ -14,7 +14,7 @@ export class NetidComponent implements OnInit {
   }
 
   onNext() {
-    this.router.navigate(['/auth/register/setup']);
+    this.router.navigate(['/auth/register/subscription']);
   }
 
 }
