@@ -1,4 +1,6 @@
-# Hackathon2019 (Sprout)
+# Sprout
+
+Created for the 2019 hackathon hosted by Hesburgh Library at the University of Notre Dame which received the second place award.
 
 A calendar application to show custom events and reminders tailored to the student. Student is able to select clubs, dorms, and departments they might be interested in and events for these groups will be added to their personal calendar.
 
