@@ -1,4 +1,6 @@
-# Hackathon2019
+# Hackathon2019 (Sprout)
+
+A calendar application to show custom events and reminders tailored to the student. Student is able to select clubs, dorms, and departments they might be interested in and events for these groups will be added to their personal calendar.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
 
